@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+.form-wrapper {
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+
+  background: linear-gradient(to right, #9e0096, #0fb5c4);
+
+	width: 100vw;
+	height: 100vh;
+}
+
+.form-user {
+	display: flex;
+
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding: 20px;
+	border-radius: 20px;
+
+	width: 80%;
+	height: 80%;
+
+	background: white;
+	box-shadow: 0px 0 22px 2px #fff;
+
+	animation-name: BoxShadowPulsation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes BoxShadowPulsation {
+	0% {
+		box-shadow: 0px 0 22px 2px #fff;
+	}
+	50% {
+		box-shadow: 0px 0 22px 2px rgba(255, 255, 255, 0.473);
+	}
+	100% {
+		box-shadow: 0px 0 22px 2px #fff;
+	}
+}
+
+.form-user__logo {
+	width: 100px;
+	height: 100px;
+}
+
+.form-user__heading {
+	color: #333;
+	font-family: 'Kaushan Script'
+}
+
+.form-user__input {
+	color: #333;
+
+	font-family: 'Montserrat';
+	font-size: 18px;
+	
+	text-align: center;
+
+	border: none;
+	border-bottom: 1px solid #222;
+
+	padding: 15px 30px;
+
+	width: 300px;
+}
+
+.form-user__input::placeholder {
+	color: #333;
+}
+
+.form-user__submit {
+  position: relative;
+	display: inline-block;
+	
+	font-family: 'Montserrat';
+	font-size: 1em;
+	color: #fff;
+	
+	cursor: pointer;
+  padding: 10px 40px;
+  appearance: none;
+  background-color: #2375AD;
+	
+  border-radius: 4px;
+	border: none;
+	
+	box-shadow: 0 2px 25px rgba(0, 110, 255, 0.5);
+	
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+}
+
+.form-user__submit:focus {
+	outline: 0;
+}
+
+.form-user__submit:active {
+	background-color: darken(#2375AD, 5%);
+	box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+	transform: scale(0.9);
+}
+
+.form-user__question {
+	display: flex;
+	align-items: center;
+}
+
+.input-wrapper {
+	display: flex;
+	margin: 50px 0;
+}
+
+@media (max-width: 450px) {
+	.form-user__input {
+		width: 200px;
+	}
+}
+
+@media (orientation: landscape) and (max-height: 400px) {
+	.form-wrapper {
+		height: fit-content;
+		padding: 20px 0;
+	}
+}

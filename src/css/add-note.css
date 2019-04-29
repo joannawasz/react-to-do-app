@@ -1,0 +1,82 @@
+.add-note-form {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.add-note-form__desc {
+	width: 70%;
+	border: none;
+	text-align: center;
+	background-color: rgba(146, 188, 241, 0.2);
+	border-radius: 10px;
+	padding: 10px;
+	transition: all .5s ease;
+	font-family: 22px;
+	font-family: 'Montserrat';
+}
+
+.add-note-form__desc::placeholder {
+	text-align: center;
+	color: #444;
+	padding: 7.5px;
+	transition: all .5s ease;
+	font-family: 'Montserrat'
+}
+
+.add-note-form__desc:focus {
+	outline: none;
+}
+
+.add-note-form__desc:focus.add-note-form__desc::placeholder {
+	color: transparent;
+}
+
+.add-note-form__desc + .add-note-form__submit {
+	margin-left: 30px;
+}
+
+.add-note-form__submit {
+	font-family: 'Montserrat';
+  display: inline-block;
+  font-size: 1em;
+  padding: 10px 40px;
+  appearance: none;
+	background-color: #2375AD;
+	background: linear-gradient(to right, #9e0096, #0fb5c4);
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(0, 110, 255, 0.5);
+}
+
+.add-note-form__submit:focus {
+	outline: 0;
+}
+
+.add-note-form__submit:active{
+	transform: scale(0.9);
+	background-color: darken(#2375AD, 5%);
+	box-shadow: 0 2px 25px rgba(212, 0, 255, 0.6);
+}
+
+@media (max-width: 500px) {
+	.add-note-form {
+		flex-direction: column;
+	}
+	.add-note-form__desc {
+		width: auto;
+	}
+
+	.add-note-form__submit {
+		width: 100%;
+	}
+
+	.add-note-form__desc + .add-note-form__submit {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+}
