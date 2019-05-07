@@ -9,7 +9,6 @@ class UserPicker extends React.Component {
 		event.preventDefault();
 		const userID = this.myInput.current.value
 		this.props.history.push(`/user/${userID}`)
-		console.log(userID)
 	}
 
 	render () {

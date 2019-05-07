@@ -3,7 +3,6 @@ import {TransitionGroup, CSSTransition} from 'react-transition-group'
 import '../css/note.css'
 import EditNote from './EditNote';
 
-
 class Note extends React.Component {
 	renderNote = key => {
 		return (
