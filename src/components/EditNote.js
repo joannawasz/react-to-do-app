@@ -3,9 +3,7 @@ import React from 'react'
 class EditNote extends React.Component {
 
 	handleChange = (event) => {
-		console.log(event.currentTarget.name)
 		const editNote = {...this.props.note, [event.currentTarget.name]: event.currentTarget.value}
-		console.log(editNote)
 		this.props.editNote(this.props.index, editNote)
 	}
 

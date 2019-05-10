@@ -15,7 +15,7 @@ class AddNote extends React.Component {
 	}
 	
 	currentDate() {
-		const tempDate = new Date();
+		const tempDate = new Date()
 		const date = tempDate.getFullYear() + '-' + (tempDate.getMonth()+1) + '-' + tempDate.getDate()
 		const date2 = date.toLocaleString()
 		return date2
