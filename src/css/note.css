@@ -25,8 +25,8 @@
 	font-size: 20px;
 	background: -webkit-linear-gradient(#9e0096, #0fb5c4);
 	background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .note-form__paragraph {
@@ -44,18 +44,18 @@
 
 .note-form__submit {
 	font-family: 'Montserrat';
-  display: inline-block;
-  font-size: 1em;
+	display: inline-block;
+	font-size: 1em;
 	padding: 10px 0;
 	width: 90px;
   appearance: none;
 	background-color: #fff;
-  color: #555;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+	color: #555;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	position: relative;
+	transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
 	box-shadow: 0 0px 5px rgba(255, 0, 55, 0.5);
 	margin-left: 40px;
 	transition: all 0.5s ease;
@@ -79,7 +79,7 @@
 
 .note-form.enter {
 	transform: translateX(-120%);
-  transition: 0.5s;
+	transition: 0.5s;
 }
 
 .note-form.enter.note-form.enter-active {
@@ -87,7 +87,7 @@
 }
 
 .note-form.exit {
-  transition: 1s;
+	transition: 1s;
 	transform: translateX(0);
 }
 
