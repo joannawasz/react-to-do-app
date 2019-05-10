@@ -15,7 +15,7 @@ class UserPicker extends React.Component {
 		return (
 			<div className="form-wrapper">
 				<form className="form-user" onSubmit={this.handleSubmit}>
-					<img className="form-user__logo" src={icon} alt="logo" />>
+					<img className="form-user__logo" src={icon} alt="logo" />
 					<h2 className="form-user__heading">
 						ToDoApp
 					</h2>
